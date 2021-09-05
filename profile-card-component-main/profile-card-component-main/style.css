@@ -1,0 +1,143 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-grey: hsl(0, 0%, 59%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.circle-left {
+    position: absolute;
+    top: -600px;
+    left: -300px;
+    z-index: 0;
+}
+
+.circle-right {
+    position: absolute;
+    bottom: -600px;
+    right: -300px;
+    z-index: 0;
+}
+
+.container {
+    width: 350px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 370px;
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+}
+
+.container .container-img {
+    width: 100%;
+    height: 135px;
+}
+
+.container .container-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .container-avatar {
+    width: 100%;
+    
+}
+
+.container .container-avatar .container-avatar-circle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+    left: 35%;
+    overflow: hidden;
+    border: 5px solid white;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kumbh Sans", sans-serif;
+    height: 80px;
+}
+
+.container-info {
+    display: flex;
+    margin-top: 130px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-info span {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.container-info span:first-child {
+    color:hsl(229, 23%, 23%);
+    font-weight: 600;
+    flex: 6;
+}
+
+.container-info span:last-child {
+    color:hsl(0, 0%, 59%);
+    flex: 1;
+}
+
+.container-location {
+    color:hsl(0, 0%, 59%);
+}
+
+.container-stats {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-top: 80px;
+    border-top: 1px solid hsl(0, 0%, 89%);
+    font-family: "Kumbh Sans", sans-serif;
+} 
+
+.container-stat {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 33.33%;
+}
+
+.container-stat span:first-child {
+    color:hsl(229, 23%, 23%);
+    font-weight: 600;
+}
+
+.container-stat span:last-child{
+    font-size: 0.7rem;
+    margin-top: 5px;
+    color:hsl(0, 0%, 59%);
+    font-weight: 600;
+}
