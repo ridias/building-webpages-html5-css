@@ -1,0 +1,177 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-color:hsl(0, 100%, 74%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-col {
+    flex: 1 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-content {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-content-title h1{
+    color: white;
+    font-weight: 600;
+}
+
+.container-content-description {
+    margin-top: 20px;
+}
+
+.container-content-description span {
+    line-height: 20px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.container-content-btn button {
+    background-color:var(--blue);
+    padding: 15px 20px;
+    width: 100%;
+    border: 1px solid var(--blue);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    color:rgb(202, 202, 202);
+}
+
+.container-content-btn button:hover{
+    cursor: pointer;
+}
+
+.container-content-btn span {
+    font-weight: 600;
+    color: white;
+}
+
+.container-content-form {
+    width: 100%;
+    background-color: white;
+    margin: 20px 0px 60px 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    padding-top: 20px;
+}
+
+.container-content-form-input {
+    position: relative;
+    width: 90%;    
+    display: flex;
+}
+
+.container-content-form-input input {
+    padding: 10px 20px;
+    margin: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.container-content-form-input img {
+    width: 20px; 
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+
+.container-content-form-error {
+    width: 100%;
+    text-align: right;
+    margin: -10px 50px 0px 0px;
+    display: none;
+}
+
+.container-content-form-error.show {
+    display: block;
+}
+
+.container-content-form-error span {
+    color:hsl(0, 100%, 74%);
+    font-size: 0.7rem;
+}
+
+.container-content-form button {
+    padding: 10px 20px;
+    margin: 8px;
+    width: 85%;
+    background-color:hsl(154, 59%, 51%);
+    border: 1px solid hsl(154, 59%, 51%);
+    color: white;
+    border-radius: 5px;
+}
+
+.container-content-form button:hover{
+    cursor: pointer;
+    background-color:hsl(154, 82%, 59%);
+    border: 1px solid hsl(154, 82%, 59%);
+    transition: all 0.2s;
+}
+
+
+.container-content-terms {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.container-content-terms span {
+    font-size: 0.6rem;
+    color:rgb(202, 202, 202);
+}
+
+.container-content-terms span span {
+    color:hsl(0, 100%, 74%);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) { 
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-col {
+        width: 100%;
+    }
+}
