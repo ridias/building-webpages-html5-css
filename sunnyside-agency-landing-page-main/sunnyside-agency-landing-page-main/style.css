@@ -141,7 +141,7 @@ header {
 
 .header-title {
     font-size: 2.5rem;
-    font-family: "Barlow", sans-serif;
+    font-family: "Fraunces", sans-serif;
     font-weight: 900;
     color: var(--white);
     margin-top: 150px;
@@ -186,23 +186,26 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Barlow", sans-serif;
 }
 
 .section-col-title {
     width: 100%;
     margin-top: 20px;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
 }
 
 .section-col-description {
     margin-top: 20px;
     width: 100%;
+    
 }
 
 .section-col-description span {
     line-height: 25px;
     color: var(--dark-grayish-blue);
     font-size: 0.9rem;
+    font-family: "Barlow", sans-serif;
 }
 
 .section-col-link {
@@ -213,6 +216,7 @@ header {
     text-decoration: underline;
     text-decoration-color: var(--yellow);
     margin-bottom: 20px;
+    font-family: "Fraunces", sans-serif;
 }
 
 
@@ -248,7 +252,8 @@ header {
 
 .txt-center-bottom-title span {
     color:hsl(212, 27%, 19%);
-    font-weight: 600;
+    font-weight: 900;
+    font-family: "Fraunces", sans-serif;
 }
 
 .txt-center-bottom-description {
@@ -260,6 +265,7 @@ header {
 .txt-center-bottom-description span {
     line-height: 20px;
     font-size: 0.8rem;
+    font-family: "Barlow", sans-serif;
 }
 
 .section-clients {
@@ -276,6 +282,7 @@ header {
     color:hsl(232, 10%, 55%);
     font-size: 0.9rem;
     margin-top: 100px;
+    font-family: "Fraunces", sans-serif;
 }
 
 .section-clients-cols {
@@ -310,12 +317,14 @@ header {
 .section-clients-col-description span {
     color:hsl(213, 9%, 39%);
     line-height: 25px;
+    font-family: "Barlow", sans-serif;
 }
 
 .section-clients-col-name {
     margin-top: 50px;
     color:hsl(212, 27%, 19%);
     font-weight: 900;
+    font-family: "Fraunces", sans-serif;
 }
 
 .section-clients-col-rol{
@@ -323,6 +332,7 @@ header {
     margin-top: 10px;
     color:hsl(232, 10%, 55%);
     margin-bottom: 30px;
+    font-family: "Barlow", sans-serif;
 }
 
 
@@ -357,6 +367,7 @@ footer {
     margin-right: 40px;
     color: white;
     cursor: pointer;
+    font-family: "Barlow", sans-serif;
 }
 
 .footer-icons {
